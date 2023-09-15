@@ -11,7 +11,7 @@ const LayoutScreen = () => {
       {/* Header */}
       <View style={styles.header} />
       {/* main view */}
-      <View>
+      <View style={styles.main}>
         <View style={styles.section1} />
         <View style={styles.section2} />
       </View>
@@ -23,28 +23,27 @@ const LayoutScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 500,
+    height: hp(100),
   },
   header: {
-    height: 180,
+    height: hp(15),
     backgroundColor: "tomato",
   },
   main: {
-    height: 500,
+    height: hp(70),
     display: "flex",
+    flexDirection: "row",
   },
   section1: {
-    flexDirection: "row",
-    width: 200,
+    width: wp(50),
     backgroundColor: "orange",
   },
   section2: {
-    flexDirection: "row",
-    width: 200,
+    width: wp(50),
     backgroundColor: "skyblue",
   },
   footer: {
-    height: 180,
+    height: hp(15),
     backgroundColor: "lightgreen",
   },
 });

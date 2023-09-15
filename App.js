@@ -26,6 +26,7 @@ export default function App() {
       </View>
       <View
         style={{
+          flex: 2,
           backgroundColor: "green",
           // width: 100,
           // height: 100,
@@ -37,6 +38,7 @@ export default function App() {
       </View>
       <View
         style={{
+          flex: 2,
           backgroundColor: "blue",
           // width: 100,
           // height: 100,
